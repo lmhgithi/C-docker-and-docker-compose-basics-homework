@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class demo {
     @GetMapping("/hello")
     public String hello(){
-        String url = "http://localhost:8081/hello";
+        String url = "http://bob:8081/hello";
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url, String.class);
     }
